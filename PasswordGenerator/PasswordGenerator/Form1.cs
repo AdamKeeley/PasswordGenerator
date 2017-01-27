@@ -19,5 +19,10 @@ namespace PasswordGenerator
         {
             tbxPassword.Text = NewPassword();
         }
+
+        private void btnCopyToClipboardClick (object sender, System.EventArgs e)
+        {
+            Clipboard.SetText(tbxPassword.Text);
+        }
     }
 }

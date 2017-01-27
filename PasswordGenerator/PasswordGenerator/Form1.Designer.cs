@@ -30,6 +30,7 @@
         {
             this.btnNewPassword = new System.Windows.Forms.Button();
             this.tbxPassword = new System.Windows.Forms.TextBox();
+            this.btnCopyToClipboard = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnNewPassword
@@ -52,11 +53,22 @@
             this.tbxPassword.TabIndex = 0;
             this.tbxPassword.Text = NewPassword();
             // 
+            // btnCopyToClipboard
+            // 
+            this.btnCopyToClipboard.Location = new System.Drawing.Point(85, 40);
+            this.btnCopyToClipboard.Name = "btnCopyToClipboard";
+            this.btnCopyToClipboard.Size = new System.Drawing.Size(100, 25);
+            this.btnCopyToClipboard.TabIndex = 2;
+            this.btnCopyToClipboard.Text = "Copy to clipboard";
+            this.btnCopyToClipboard.UseVisualStyleBackColor = true;
+            this.btnCopyToClipboard.Click += new System.EventHandler(this.btnCopyToClipboardClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 75);
+            this.Controls.Add(this.btnCopyToClipboard);
             this.Controls.Add(this.tbxPassword);
             this.Controls.Add(this.btnNewPassword);
             this.Name = "Form1";
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Button btnNewPassword;
         private System.Windows.Forms.TextBox tbxPassword;
+        private System.Windows.Forms.Button btnCopyToClipboard;
     }
 }
 
